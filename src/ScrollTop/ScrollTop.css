@@ -1,0 +1,8 @@
+.scroll-icon {
+    transition: all 1s ease;
+    filter: opacity(0.8);
+}
+
+.scroll-icon:hover {
+    transform: scale(1.2);
+}

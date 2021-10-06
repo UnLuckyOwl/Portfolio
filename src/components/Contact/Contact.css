@@ -1,0 +1,521 @@
+.contact {
+    background-color: #262626;
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.contact-tit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #06bcee;
+    font-size: 1.5rem;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 100px;
+}
+
+.contact-title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f2f3f4;
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.contact_form {
+    align-items: center;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+.contact_container {
+    position: relative;
+    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 10%;
+    z-index: 5;
+}
+
+.contact_inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+.contact_input {
+    color: #bcb4b4;
+    width: 100%;
+    padding: 0.8rem;
+    outline: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 2rem;
+    border: none;
+    border-bottom: 3px solid #f2f3f4;
+}
+.contact_button {
+    display: block;
+    background-color: transparent;
+    color: #f2f3f4;
+    padding: 0.75rem 2.5rem;
+    margin-left: 75%;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid #f2f3f4;
+    transition: all 1s ease;
+}
+
+.contact_button:hover {
+    background-color: #262626;
+    color: #bcb4b4;
+    transform: scale(1.1);
+}
+
+.contact .container .contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    position: relative;
+    padding: 20px 0;
+    width: 400px;
+}
+
+.box .icons {
+    float: left;
+    vertical-align: bottom;
+    padding: 10px 25px;
+    margin-left: 100px;
+    transition: all 1s ease;
+}
+
+.box .icons:hover {
+    transform: scale(1.2);
+}
+
+.text h3 {
+    color: #bcb4b4;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.text p {
+    padding: 7px 0;
+    color: #f2f3f4;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    transition: all 1s ease;
+}
+
+.text p:hover {
+    color: #bcb4b4;
+    transform: scale(1.005);
+}
+
+@media screen and (max-width: 1921px) and (max-height: 1081px) {
+    .contact h2 {
+        padding-top: 8%;
+    }
+    .contact_container {
+        margin-top: 8%;
+        margin-left: 20%;
+        margin-right: 15%;
+    }
+    .contactInfo .box {
+        margin-left: 0;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 2.1rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+    .contact_input {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.5rem;
+    }
+    .contact_button {
+        font-size: 1.2rem;
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 1536px) and (max-height: 960px) {
+    .contact_container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+    .contact h2 {
+        padding-top: 8%;
+    }
+    .contact_container {
+        margin-top: 8%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contactInfo .box {
+        margin-left: 0;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 2.1rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+    .contact_form {
+        margin-top: 2%;
+    }
+    .contact_input {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .contact_button {
+        font-size: 1.2rem;
+        margin-left: 70%;
+    }
+}
+
+@media screen and (max-width: 1367px) and (max-height: 769px) {
+    .contact_container {
+        margin-top: 7%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contactInfo .box {
+        margin-left: 0;
+        width: fit-content;
+    }
+    .contact_button {
+        margin-left: 70%;
+    }
+    .contact_form {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+    .contact_container {
+        margin: 5%;
+    }
+    .contactInfo {
+        margin-left: -5%;
+    }
+    .contact_form {
+        margin-right: 0;
+    }
+    .contact_button {
+        margin-left: 35%;
+    }
+    .contact-title {
+        font-size: 3rem;
+    }
+    .contact-tit {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+    .contact-title {
+        font-size: 4.5rem;
+    }
+    .contact-tit {
+        font-size: 1.8rem;
+    }
+    .contact_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contactInfo .box {
+        margin-left: 15%;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 2.5rem;
+    }
+    .text p {
+        font-size: 1.5rem;
+    }
+    .contact_form {
+        margin-right: 11%;
+    }
+    .contact_input {
+        font-size: 1.8rem;
+    }
+    .contact_button {
+        font-size: 1.8rem;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 769px) {
+    .contact-title {
+        font-size: 4.5rem;
+    }
+    .contact-tit {
+        font-size: 1.8rem;
+        margin-top: 0;
+    }
+    .contact_container {
+        margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+    .contactInfo .box {
+        margin-left: 15%;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 1.8rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+    .contact_form {
+        margin-right: 20%;
+    }
+    .contact_input {
+        font-size: 1.2rem;
+    }
+    .contact_button {
+        font-size: 1.2rem;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 1025px) and (max-height: 641px) {
+    .contact {
+        height: 110vh;
+    }
+    .contact_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 6%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .contact-title {
+        font-size: 3rem;
+    }
+    .contact-tit {
+        font-size: 1.1rem;
+        margin-top: 2%;
+    }
+    .contactInfo .box {
+        margin-left: 0%;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 1rem;
+    }
+    .contact_form {
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+    .contact_input {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 769px) and (max-height: 1024px) {
+    .contact {
+        height: 102vh;
+    }
+    .contact_container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 6%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .contactInfo .box {
+        margin-left: 12%;
+        width: 500px;
+    }
+    .contact-title {
+        font-size: 4.2rem;
+    }
+    .contact-tit {
+        font-size: 1.7rem;
+        margin-top: 7%;
+    }
+    .contactInfo .box {
+        margin-left: 5%;
+        width: fit-content;
+    }
+    .text h3 {
+        font-size: 1.8rem;
+    }
+    .text p {
+        font-size: 1.2rem;
+    }
+    .contact_form {
+        margin-right: 18%;
+    }
+    .contact_input {
+        font-size: 1.4rem;
+    }
+    .contact_button {
+        margin-left: 33%;
+    }
+}
+
+@media screen and (max-width: 428px) and (max-height: 844px) {
+    .contact {
+        height: 130vh;
+    }
+    .contact h2 {
+        font-size: 0.9rem;
+        padding-top: 20px;
+    }
+    .contact h1 {
+        font-size: 3.5rem;
+    }
+    .contact_container {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 0%;
+    }
+    .contactInfo .box {
+        margin-left: -15%;
+        width: 500px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .contact_form {
+        margin-right: 20%;
+        margin-left: -10%;
+    }
+    .contact_button {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 896px) {
+    .contact {
+        height: 110vh;
+    }
+    .contact h2 {
+        padding-top: 20px;
+    }
+    .contact_container {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contactInfo .box {
+        margin-left: -15%;
+        width: 600px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .contact_form {
+        margin-right: 20%;
+        margin-left: -10%;
+    }
+    .contact_button {
+        margin-left: 30%;
+    }
+    .contact_input {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 415px) and (max-height: 737px) {
+    .contact {
+        height: 130vh;
+    }
+    .contact h2 {
+        padding-top: 20px;
+    }
+    .contact_container {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .contactInfo .box {
+        margin-left: -10%;
+        width: 500px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .contact_form {
+        margin-right: 20%;
+        margin-left: -10%;
+    }
+    .contact_button {
+        margin-left: 30%;
+    }
+}
+
+@media screen and (max-width: 376px) and (max-height: 813px) {
+    .contact {
+        height: 120vh;
+    }
+    .contact h2 {
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+    .contact h1 {
+        font-size: 3.5rem;
+    }
+    .contact_container {
+        margin-top: 10%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .contactInfo {
+        width: fit-content;
+    }
+    .contactInfo .box {
+        margin-left: -8%;
+        width: 500px;
+    }
+    .box h3 {
+        font-size: 1.5rem;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .contact_form {
+        margin-right: 20%;
+        margin-left: -5%;
+    }
+    .contact_button {
+        font-size: 1rem;
+        margin-left: 30%;
+    }
+    .contact_input {
+        font-size: 1rem;
+    }
+}

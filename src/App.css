@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #262626;
+}
+
+/* Animations */
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: all 1s 0.5s;
+}
+
+.fade-exit {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: all 300ms;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #262626;
+    border: 3px solid #aaa;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
